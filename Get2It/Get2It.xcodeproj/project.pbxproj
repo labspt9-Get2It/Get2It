@@ -57,8 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				CC6C2FEA242FC38800401937 /* Custom Views */,
-				CC6C2FE9242FC32400401937 /* Support */,
 				CC6C2FEE242FCADC00401937 /* Screens */,
+				CC6C2FE9242FC32400401937 /* Support */,
 				CC6C2FE3242FBC6000401937 /* Info.plist */,
 			);
 			path = Get2It;
