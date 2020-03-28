@@ -12,6 +12,7 @@
 		CC6C2FDF242FBC6000401937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC6C2FDE242FBC6000401937 /* Assets.xcassets */; };
 		CC6C2FE2242FBC6000401937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6C2FE0242FBC6000401937 /* LaunchScreen.storyboard */; };
 		CC6C2FED242FC65E00401937 /* GTTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6C2FEC242FC65E00401937 /* GTTabBarController.swift */; };
+		CC6C2FF0242FCB4C00401937 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6C2FEF242FCB4C00401937 /* HomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CC6C2FE1242FBC6000401937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC6C2FE3242FBC6000401937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC6C2FEC242FC65E00401937 /* GTTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTTabBarController.swift; sourceTree = "<group>"; };
+		CC6C2FEF242FCB4C00401937 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				CC6C2FEA242FC38800401937 /* Custom Views */,
 				CC6C2FE9242FC32400401937 /* Support */,
+				CC6C2FEE242FCADC00401937 /* Screens */,
 				CC6C2FE3242FBC6000401937 /* Info.plist */,
 			);
 			path = Get2It;
@@ -86,6 +89,14 @@
 				CC6C2FEC242FC65E00401937 /* GTTabBarController.swift */,
 			);
 			path = TabBarControllers;
+			sourceTree = "<group>";
+		};
+		CC6C2FEE242FCADC00401937 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				CC6C2FEF242FCB4C00401937 /* HomeVC.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC6C2FED242FC65E00401937 /* GTTabBarController.swift in Sources */,
+				CC6C2FF0242FCB4C00401937 /* HomeVC.swift in Sources */,
 				CC6C2FD6242FBC5D00401937 /* AppDelegate.swift in Sources */,
 				CC6C2FD8242FBC5D00401937 /* SceneDelegate.swift in Sources */,
 			);
