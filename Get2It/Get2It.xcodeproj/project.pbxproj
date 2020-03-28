@@ -9,19 +9,19 @@
 /* Begin PBXBuildFile section */
 		CC6C2FD6242FBC5D00401937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6C2FD5242FBC5D00401937 /* AppDelegate.swift */; };
 		CC6C2FD8242FBC5D00401937 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6C2FD7242FBC5D00401937 /* SceneDelegate.swift */; };
-		CC6C2FDA242FBC5D00401937 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6C2FD9242FBC5D00401937 /* ViewController.swift */; };
 		CC6C2FDF242FBC6000401937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC6C2FDE242FBC6000401937 /* Assets.xcassets */; };
 		CC6C2FE2242FBC6000401937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6C2FE0242FBC6000401937 /* LaunchScreen.storyboard */; };
+		CC6C2FED242FC65E00401937 /* GTTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6C2FEC242FC65E00401937 /* GTTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CC6C2FD2242FBC5D00401937 /* Get2It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Get2It.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6C2FD5242FBC5D00401937 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC6C2FD7242FBC5D00401937 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CC6C2FD9242FBC5D00401937 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CC6C2FDE242FBC6000401937 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC6C2FE1242FBC6000401937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC6C2FE3242FBC6000401937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC6C2FEC242FC65E00401937 /* GTTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,38 @@
 		CC6C2FD4242FBC5D00401937 /* Get2It */ = {
 			isa = PBXGroup;
 			children = (
-				CC6C2FD5242FBC5D00401937 /* AppDelegate.swift */,
-				CC6C2FD7242FBC5D00401937 /* SceneDelegate.swift */,
-				CC6C2FD9242FBC5D00401937 /* ViewController.swift */,
-				CC6C2FDE242FBC6000401937 /* Assets.xcassets */,
-				CC6C2FE0242FBC6000401937 /* LaunchScreen.storyboard */,
+				CC6C2FEA242FC38800401937 /* Custom Views */,
+				CC6C2FE9242FC32400401937 /* Support */,
 				CC6C2FE3242FBC6000401937 /* Info.plist */,
 			);
 			path = Get2It;
+			sourceTree = "<group>";
+		};
+		CC6C2FE9242FC32400401937 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				CC6C2FD5242FBC5D00401937 /* AppDelegate.swift */,
+				CC6C2FD7242FBC5D00401937 /* SceneDelegate.swift */,
+				CC6C2FDE242FBC6000401937 /* Assets.xcassets */,
+				CC6C2FE0242FBC6000401937 /* LaunchScreen.storyboard */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		CC6C2FEA242FC38800401937 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC6C2FEB242FC3AD00401937 /* TabBarControllers */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		CC6C2FEB242FC3AD00401937 /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC6C2FEC242FC65E00401937 /* GTTabBarController.swift */,
+			);
+			path = TabBarControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC6C2FDA242FBC5D00401937 /* ViewController.swift in Sources */,
+				CC6C2FED242FC65E00401937 /* GTTabBarController.swift in Sources */,
 				CC6C2FD6242FBC5D00401937 /* AppDelegate.swift in Sources */,
 				CC6C2FD8242FBC5D00401937 /* SceneDelegate.swift in Sources */,
 			);
