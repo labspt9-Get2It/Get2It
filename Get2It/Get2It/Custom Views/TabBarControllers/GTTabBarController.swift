@@ -18,7 +18,7 @@ class GTTabBarController: UITabBarController {
     }
     
     func createHomeNC() -> UINavigationController {
-        let homeVC = UIViewController()
+        let homeVC = HomeVC()
         homeVC.title = "Home"
         homeVC.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 0)
         
