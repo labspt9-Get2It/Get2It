@@ -13,7 +13,20 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .systemBlue
+        view.backgroundColor = .systemBackground
+        setupTemporaryButton()
+    }
+    
+    // Temporary to navigate to Task List VC
+    func setupTemporaryButton() {
+        let addBarButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(temporaryButtonTapped))
+        self.navigationItem.rightBarButtonItem = addBarButton
+    }
+    
+    @objc func temporaryButtonTapped() {
+        let taskListVC = TaskListVC()
+        taskListVC.title = "Task List"
+        self.navigationController?.pushViewController(taskListVC, animated: true)
     }
     
 
