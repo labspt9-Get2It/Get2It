@@ -13,6 +13,7 @@
 		CC6C2FE2242FBC6000401937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6C2FE0242FBC6000401937 /* LaunchScreen.storyboard */; };
 		CC6C2FED242FC65E00401937 /* GTTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6C2FEC242FC65E00401937 /* GTTabBarController.swift */; };
 		CC6C2FF0242FCB4C00401937 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6C2FEF242FCB4C00401937 /* HomeVC.swift */; };
+		E3648CA12431886B00D4A8E3 /* TaskListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3648CA02431886B00D4A8E3 /* TaskListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CC6C2FE3242FBC6000401937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC6C2FEC242FC65E00401937 /* GTTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTTabBarController.swift; sourceTree = "<group>"; };
 		CC6C2FEF242FCB4C00401937 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		E3648CA02431886B00D4A8E3 /* TaskListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				CC6C2FEF242FCB4C00401937 /* HomeVC.swift */,
+				E3648CA02431886B00D4A8E3 /* TaskListVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				CC6C2FF0242FCB4C00401937 /* HomeVC.swift in Sources */,
 				CC6C2FD6242FBC5D00401937 /* AppDelegate.swift in Sources */,
 				CC6C2FD8242FBC5D00401937 /* SceneDelegate.swift in Sources */,
+				E3648CA12431886B00D4A8E3 /* TaskListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
