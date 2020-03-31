@@ -74,7 +74,7 @@ extension TaskListVC {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createLayout())
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         collectionView.backgroundColor = .systemBackground
-        collectionView.register(SummaryCell.self, forCellWithReuseIdentifier: TextCell.reuseIdentifier)
+        collectionView.register(SummaryCell.self, forCellWithReuseIdentifier: SummaryCell.reuseIdentifier)
         collectionView.register(ListCell.self, forCellWithReuseIdentifier: ListCell.reuseIdentifier)
         view.addSubview(collectionView)
         collectionView.delegate = self
