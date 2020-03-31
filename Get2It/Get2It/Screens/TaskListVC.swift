@@ -74,7 +74,7 @@ extension TaskListVC {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createLayout())
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         collectionView.backgroundColor = .systemBackground
-        collectionView.register(TextCell.self, forCellWithReuseIdentifier: TextCell.reuseIdentifier)
+        collectionView.register(SummaryCell.self, forCellWithReuseIdentifier: TextCell.reuseIdentifier)
         collectionView.register(ListCell.self, forCellWithReuseIdentifier: ListCell.reuseIdentifier)
         view.addSubview(collectionView)
         collectionView.delegate = self
@@ -99,14 +99,14 @@ extension TaskListVC {
                 }
             } else {
                 // Get a cell of the desired kind
-                if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TextCell.reuseIdentifier, for: indexPath) as? TextCell {
+                if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SummaryCell.reuseIdentifier, for: indexPath) as? SummaryCell {
                     
                     // Populate the cell with our item description
                     cell.label.text = "\(identifier)"
-                    cell.contentView.backgroundColor = .cyan
+                    cell.contentView.backgroundColor = UIColor(red: 44/255, green: 44/255, blue: 46/255, alpha: 1.0)
                     cell.contentView.layer.borderColor = UIColor.black.cgColor
-                    cell.contentView.layer.borderWidth = 1
-                    cell.contentView.layer.cornerRadius = section == .grid ? 8 : 0
+                    cell.contentView.layer.borderWidth = 0.2
+                    cell.contentView.layer.cornerRadius = section == .grid ? 10 : 0
                     cell.label.textAlignment = .center
                     cell.label.font = UIFont.preferredFont(forTextStyle: .title1)
                     

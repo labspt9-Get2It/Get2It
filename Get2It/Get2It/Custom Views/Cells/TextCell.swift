@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TextCell: UICollectionViewCell {
+class SummaryCell: UICollectionViewCell {
     let label = UILabel()
     static let reuseIdentifier = "text-cell-reuse-identifier"
     
@@ -22,7 +22,7 @@ class TextCell: UICollectionViewCell {
     }
 }
 
-extension TextCell {
+extension SummaryCell {
     func configure() {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.adjustsFontForContentSizeCategory = true
