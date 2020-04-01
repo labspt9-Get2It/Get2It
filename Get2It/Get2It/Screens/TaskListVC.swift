@@ -59,7 +59,7 @@ extension TaskListVC {
             let item = NSCollectionLayoutItem(layoutSize: itemSize)
             item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
             
-            let groupHeight = columns == 1 ? NSCollectionLayoutDimension.absolute(44) : NSCollectionLayoutDimension.fractionalWidth(0.2)
+            let groupHeight = columns == 1 ? NSCollectionLayoutDimension.absolute(44) : NSCollectionLayoutDimension.fractionalWidth(1/3)
             let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: groupHeight)
             let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: columns)
             
@@ -100,15 +100,11 @@ extension TaskListVC {
             } else {
                 // Get a cell of the desired kind
                 if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SummaryCell.reuseIdentifier, for: indexPath) as? SummaryCell {
-                    
-                    // Populate the cell with our item description
-                    cell.label.text = "\(identifier)"
-                    cell.contentView.backgroundColor = UIColor(red: 44/255, green: 44/255, blue: 46/255, alpha: 1.0)
+
+                    cell.contentView.backgroundColor = UIColor(red: 44/255, green: 44/255, blue: 46/255, alpha: 1)
                     cell.contentView.layer.borderColor = UIColor.black.cgColor
                     cell.contentView.layer.borderWidth = 0.2
                     cell.contentView.layer.cornerRadius = section == .grid ? 10 : 0
-                    cell.label.textAlignment = .center
-                    cell.label.font = UIFont.preferredFont(forTextStyle: .title1)
                     
                     // Return the cell
                     return cell
