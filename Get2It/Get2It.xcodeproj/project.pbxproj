@@ -18,6 +18,8 @@
 		E3648CA12431886B00D4A8E3 /* TaskListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3648CA02431886B00D4A8E3 /* TaskListVC.swift */; };
 		E3648CA42432B5C500D4A8E3 /* SummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3648CA32432B5C500D4A8E3 /* SummaryCell.swift */; };
 		E3648CA62432BC1900D4A8E3 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3648CA52432BC1900D4A8E3 /* ListCell.swift */; };
+		E3648CA92435705700D4A8E3 /* AddTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3648CA82435705700D4A8E3 /* AddTaskVC.swift */; };
+		E3648CAB2435797300D4A8E3 /* TaskInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3648CAA2435797300D4A8E3 /* TaskInfoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		E3648CA02431886B00D4A8E3 /* TaskListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListVC.swift; sourceTree = "<group>"; };
 		E3648CA32432B5C500D4A8E3 /* SummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCell.swift; sourceTree = "<group>"; };
 		E3648CA52432BC1900D4A8E3 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		E3648CA82435705700D4A8E3 /* AddTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskVC.swift; sourceTree = "<group>"; };
+		E3648CAA2435797300D4A8E3 /* TaskInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInfoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 			children = (
 				CC6C2FEF242FCB4C00401937 /* HomeVC.swift */,
 				E3648CA02431886B00D4A8E3 /* TaskListVC.swift */,
+				E3648CA82435705700D4A8E3 /* AddTaskVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 				E3648CA32432B5C500D4A8E3 /* SummaryCell.swift */,
 				E3648CA52432BC1900D4A8E3 /* ListCell.swift */,
 				CC4332512437F7F80099023F /* HeaderCell.swift */,
+				E3648CAA2435797300D4A8E3 /* TaskInfoCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -209,6 +215,8 @@
 				CC6C2FD8242FBC5D00401937 /* SceneDelegate.swift in Sources */,
 				E3648CA42432B5C500D4A8E3 /* SummaryCell.swift in Sources */,
 				E3648CA12431886B00D4A8E3 /* TaskListVC.swift in Sources */,
+				E3648CAB2435797300D4A8E3 /* TaskInfoCell.swift in Sources */,
+				E3648CA92435705700D4A8E3 /* AddTaskVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -44,9 +44,12 @@ extension TaskListVC {
     }
     
     @objc func addTaskButtonTapped() {
-        var snapshot = dataSource.snapshot()
-        snapshot.appendItems([5, 6, 7, 8], toSection: .list)
-        dataSource.apply(snapshot, animatingDifferences: true)
+//        var snapshot = dataSource.snapshot()
+//        snapshot.appendItems([5, 6, 7, 8], toSection: .list)
+//        dataSource.apply(snapshot, animatingDifferences: true)
+        let addTaskVC = AddTaskVC()
+        let navigationController = UINavigationController(rootViewController: addTaskVC)
+        present(navigationController, animated: true, completion: nil)
     }
     
     func createLayout() -> UICollectionViewLayout {
