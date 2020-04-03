@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC4332522437F7F80099023F /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4332512437F7F80099023F /* HeaderCell.swift */; };
 		CC6C2FD6242FBC5D00401937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6C2FD5242FBC5D00401937 /* AppDelegate.swift */; };
 		CC6C2FD8242FBC5D00401937 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6C2FD7242FBC5D00401937 /* SceneDelegate.swift */; };
 		CC6C2FDF242FBC6000401937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC6C2FDE242FBC6000401937 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC4332512437F7F80099023F /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		CC6C2FD2242FBC5D00401937 /* Get2It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Get2It.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6C2FD5242FBC5D00401937 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC6C2FD7242FBC5D00401937 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			children = (
 				E3648CA32432B5C500D4A8E3 /* SummaryCell.swift */,
 				E3648CA52432BC1900D4A8E3 /* ListCell.swift */,
+				CC4332512437F7F80099023F /* HeaderCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				CC6C2FF0242FCB4C00401937 /* HomeVC.swift in Sources */,
 				CC6C2FD6242FBC5D00401937 /* AppDelegate.swift in Sources */,
 				E3648CA62432BC1900D4A8E3 /* ListCell.swift in Sources */,
+				CC4332522437F7F80099023F /* HeaderCell.swift in Sources */,
 				CC6C2FD8242FBC5D00401937 /* SceneDelegate.swift in Sources */,
 				E3648CA42432B5C500D4A8E3 /* SummaryCell.swift in Sources */,
 				E3648CA12431886B00D4A8E3 /* TaskListVC.swift in Sources */,
