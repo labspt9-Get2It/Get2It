@@ -119,7 +119,7 @@ class HomeVC: UIViewController, UICollectionViewDelegate {
                     cell.contentView.backgroundColor = UIColor(red: 44/255, green: 44/255, blue: 46/255, alpha: 1)
                     cell.contentView.layer.borderColor = UIColor.black.cgColor
                     cell.contentView.layer.borderWidth = 0.2
-                    cell.contentView.layer.cornerRadius = section == .grid ? 10 : 0
+                    cell.contentView.layer.cornerRadius = section == .header ? 10 : 0
                     
                     // Return the cell
                     return cell
@@ -132,7 +132,9 @@ class HomeVC: UIViewController, UICollectionViewDelegate {
         // Initial data
         var snapshot = NSDiffableDataSourceSnapshot<SectionLayoutKind, Int>()
         snapshot.appendSections([.header, .grid, .list])
-        snapshot.appendItems([1, 2], toSection: .grid)
+        snapshot.appendItems([1], toSection: .header)
+        snapshot.appendItems([2, 3], toSection: .grid)
+        snapshot.appendItems([4, 5, 6], toSection: .list)
         
         dataSource.apply(snapshot, animatingDifferences: false)
     }
