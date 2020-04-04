@@ -9,12 +9,14 @@
 import UIKit
 
 class AddTaskVC: UIViewController {
+    private let tableView = UITableView(frame: .zero, style: .grouped)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         title = "Add New Task"
         configureViewController()
+        configureTableViewController()
     }
 }
 
@@ -35,4 +37,29 @@ extension AddTaskVC {
     @objc private func dismissButtonTapped() {
         
     }
+    
+    private func configureTableViewController() {
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.register(TaskInfoCell.self, forCellReuseIdentifier: TaskInfoCell.reuseIdentifier)
+    }
+}
+
+extension AddTaskVC: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+}
+
+extension AddTaskVC: UITableViewDelegate {
+    
 }

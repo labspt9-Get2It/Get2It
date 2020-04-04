@@ -24,7 +24,16 @@ class TaskListVC: UIViewController, UICollectionViewDelegate {
     }
     
     var dataSource: UICollectionViewDiffableDataSource<SectionLayoutKind, Int>! = nil
-    var collectionView: UICollectionView! = nil
+    
+    private lazy var collectionView: UICollectionView = {
+        let collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: self.createLayout())
+        collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        collectionView.backgroundColor = .systemBackground
+        collectionView.register(SummaryCell.self, forCellWithReuseIdentifier: SummaryCell.reuseIdentifier)
+        collectionView.register(ListCell.self, forCellWithReuseIdentifier: ListCell.reuseIdentifier)
+        collectionView.delegate = self
+        return collectionView
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,13 +83,7 @@ extension TaskListVC {
     }
     
     func configureHierarchy() {
-        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createLayout())
-        collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        collectionView.backgroundColor = .systemBackground
-        collectionView.register(SummaryCell.self, forCellWithReuseIdentifier: SummaryCell.reuseIdentifier)
-        collectionView.register(ListCell.self, forCellWithReuseIdentifier: ListCell.reuseIdentifier)
         view.addSubview(collectionView)
-        collectionView.delegate = self
     }
     
     func configureDataSource() {
