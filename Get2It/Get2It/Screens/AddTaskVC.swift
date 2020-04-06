@@ -35,7 +35,7 @@ extension AddTaskVC {
     }
     
     @objc private func dismissButtonTapped() {
-        
+        dismiss(animated: true, completion: nil)
     }
     
     private func configureTableViewController() {
