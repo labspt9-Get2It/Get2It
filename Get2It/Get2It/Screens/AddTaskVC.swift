@@ -10,6 +10,10 @@ import UIKit
 
 class AddTaskVC: UIViewController {
     private let tableView = UITableView(frame: .zero, style: .grouped)
+    private var nameOfTask: String?
+    private var todaysDate = Date()
+    private var startTime = Date()
+    private var endTime = Date().addingTimeInterval(60 * 60)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,21 +80,21 @@ extension AddTaskVC: UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: TaskPickerCell.reuseIdentifier, for: indexPath) as? TaskPickerCell else {
                 return UITableViewCell()
             }
-            cell.configure(with: "Date", placeholder: "Today's Date")
+            cell.configure(with: "Date", date: todaysDate, cellType: .taskDate)
             
             return cell
         case 2:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: TaskPickerCell.reuseIdentifier, for: indexPath) as? TaskPickerCell else {
                 return UITableViewCell()
             }
-            cell.configure(with: "Start Time", placeholder: "12:00 PM")
+            cell.configure(with: "Start Time", date: startTime, cellType: .startTime)
             
             return cell
         case 3:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: TaskPickerCell.reuseIdentifier, for: indexPath) as? TaskPickerCell else {
                 return UITableViewCell()
             }
-            cell.configure(with: "End Time", placeholder: "1:00 PM")
+            cell.configure(with: "End Time", date: endTime, cellType: .endTime)
             
             return cell
         default:
