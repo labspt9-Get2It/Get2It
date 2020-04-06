@@ -9,7 +9,7 @@
 import UIKit
 
 class ListCell: UICollectionViewCell {
-    static let reuseIdentifier = "list-cell-reuse-identifier"
+    static let reuseIdentifier = "ListCell"
     let label = UILabel()
     let accessoryImageView = UIImageView()
     let seperatorView = UIView()

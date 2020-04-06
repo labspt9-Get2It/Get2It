@@ -9,13 +9,23 @@
 import UIKit
 
 class TaskInfoCell: UITableViewCell {
-    static let reuseIdentifier = "task-info-cell-reuse-identifier"
+    static let reuseIdentifier = "TaskInfoCell"
+    
+    private lazy var mainStackView: UIStackView = {
+        let view = UIStackView()
+        view.axis = .vertical
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.layoutMargins = UIEdgeInsets(top: 12, left: 8, bottom: 12, right: 8)
+        view.isLayoutMarginsRelativeArrangement = true
+        view.spacing = 8
+        return view
+    }()
     
     private lazy var stackView: UIStackView = {
         let view = UIStackView()
         view.axis = .horizontal
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.layoutMargins = UIEdgeInsets(top: 12, left: 8, bottom: 12, right: 8)
+        view.layoutMargins = UIEdgeInsets(top: 12, left: 20, bottom: 12, right: 20)
         view.isLayoutMarginsRelativeArrangement = true
         view.spacing = 8
         return view
@@ -25,6 +35,7 @@ class TaskInfoCell: UITableViewCell {
         let label = UILabel()
         label.font = UIFont(name: "AvenirNext-Medium", size: 15)
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Name of the Task"
         return label
     }()
     
@@ -32,6 +43,7 @@ class TaskInfoCell: UITableViewCell {
         let textField = UITextField()
         textField.font = UIFont(name: "AvenirNext-Medium", size: 17)
         textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.placeholder = "New Task"
         return textField
     }()
     
@@ -45,7 +57,8 @@ class TaskInfoCell: UITableViewCell {
     }
     
     private func setupStackView() {
-        contentView.addSubview(stackView)
+        contentView.addSubview(mainStackView)
+        mainStackView.addArrangedSubview(stackView)
         stackView.addArrangedSubview(textFieldLabel)
         stackView.addArrangedSubview(textField)
         
@@ -56,5 +69,4 @@ class TaskInfoCell: UITableViewCell {
             stackView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor),
         ])
     }
-    
 }
