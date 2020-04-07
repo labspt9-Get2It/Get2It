@@ -31,7 +31,7 @@ class TaskInfoCell: UITableViewCell {
         return view
     }()
     
-    private lazy var textFieldLabel: UILabel = {
+    private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "AvenirNext-Medium", size: 15)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -59,7 +59,7 @@ class TaskInfoCell: UITableViewCell {
     private func setupStackView() {
         contentView.addSubview(mainStackView)
         mainStackView.addArrangedSubview(stackView)
-        stackView.addArrangedSubview(textFieldLabel)
+        stackView.addArrangedSubview(titleLabel)
         stackView.addArrangedSubview(textField)
         
         NSLayoutConstraint.activate([
