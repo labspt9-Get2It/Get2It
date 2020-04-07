@@ -125,16 +125,12 @@ class TaskPickerCell: UITableViewCell {
         self.cellType = cellType
         textFieldLabel.text = title
         
-        
         // Date -> String using DateFormatter
         textField.text = self.dateFormatter.string(from: date)
     }
     
     @objc func dismissKeyboard() {
         self.textField.endEditing(true)
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "EEEE, MMM d, yyyy"
         
         selectedDate = datePicker.date
         
@@ -143,7 +139,7 @@ class TaskPickerCell: UITableViewCell {
         // Date -> String using DateFormatter
         self.textField.text = dateString
         
-        // delegate (VC) -> didSelectDate:cellType:
+        // TODO: delegate (VC) -> didSelectDate:cellType:
     }
     
     private func setupStackView() {
