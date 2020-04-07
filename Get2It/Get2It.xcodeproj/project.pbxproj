@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC4332522437F7F80099023F /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4332512437F7F80099023F /* HeaderCell.swift */; };
+		CC433255243800D90099023F /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC433254243800D90099023F /* UIHelper.swift */; };
 		CC6C2FD6242FBC5D00401937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6C2FD5242FBC5D00401937 /* AppDelegate.swift */; };
 		CC6C2FD8242FBC5D00401937 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6C2FD7242FBC5D00401937 /* SceneDelegate.swift */; };
 		CC6C2FDF242FBC6000401937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC6C2FDE242FBC6000401937 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC4332512437F7F80099023F /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		CC433254243800D90099023F /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		CC6C2FD2242FBC5D00401937 /* Get2It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Get2It.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6C2FD5242FBC5D00401937 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC6C2FD7242FBC5D00401937 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC433253243800CA0099023F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CC433254243800D90099023F /* UIHelper.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		CC6C2FC9242FBC5D00401937 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +74,7 @@
 		CC6C2FD4242FBC5D00401937 /* Get2It */ = {
 			isa = PBXGroup;
 			children = (
+				CC433253243800CA0099023F /* Utilities */,
 				CC6C2FEA242FC38800401937 /* Custom Views */,
 				CC6C2FEE242FCADC00401937 /* Screens */,
 				CC6C2FE9242FC32400401937 /* Support */,
@@ -112,6 +125,7 @@
 			children = (
 				E3648CA32432B5C500D4A8E3 /* SummaryCell.swift */,
 				E3648CA52432BC1900D4A8E3 /* ListCell.swift */,
+				CC4332512437F7F80099023F /* HeaderCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -190,6 +204,8 @@
 				CC6C2FF0242FCB4C00401937 /* HomeVC.swift in Sources */,
 				CC6C2FD6242FBC5D00401937 /* AppDelegate.swift in Sources */,
 				E3648CA62432BC1900D4A8E3 /* ListCell.swift in Sources */,
+				CC4332522437F7F80099023F /* HeaderCell.swift in Sources */,
+				CC433255243800D90099023F /* UIHelper.swift in Sources */,
 				CC6C2FD8242FBC5D00401937 /* SceneDelegate.swift in Sources */,
 				E3648CA42432B5C500D4A8E3 /* SummaryCell.swift in Sources */,
 				E3648CA12431886B00D4A8E3 /* TaskListVC.swift in Sources */,
