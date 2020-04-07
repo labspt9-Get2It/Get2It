@@ -104,6 +104,10 @@ class TaskPickerCell: UITableViewCell {
     private var cellType: CellType?
     private var selectedDate: Date?
     
+    var textFieldString: String? {
+        return textField.text
+    }
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupStackView()
