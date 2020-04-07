@@ -9,7 +9,7 @@
 import UIKit
 
 class SummaryCell: UICollectionViewCell {
-    static let reuseIdentifier = "summary-cell-reuse-identifier"
+    static let reuseIdentifier = "SummaryCell"
     
     private lazy var mainStackView: UIStackView = {
         let view = UIStackView()
