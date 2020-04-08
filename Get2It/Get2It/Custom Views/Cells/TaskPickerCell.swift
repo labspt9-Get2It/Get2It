@@ -37,7 +37,7 @@ class TaskPickerCell: UITableViewCell {
         return view
     }()
     
-    private lazy var textFieldLabel: UILabel = {
+    private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "AvenirNext-Medium", size: 15)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -123,7 +123,7 @@ class TaskPickerCell: UITableViewCell {
         
         selectedDate = date
         self.cellType = cellType
-        textFieldLabel.text = title
+        titleLabel.text = title
         
         // Date -> String using DateFormatter
         textField.text = self.dateFormatter.string(from: date)
@@ -145,7 +145,7 @@ class TaskPickerCell: UITableViewCell {
     private func setupStackView() {
         contentView.addSubview(mainStackView)
         mainStackView.addArrangedSubview(stackView)
-        stackView.addArrangedSubview(textFieldLabel)
+        stackView.addArrangedSubview(titleLabel)
         stackView.addArrangedSubview(textField)
         
         NSLayoutConstraint.activate([
