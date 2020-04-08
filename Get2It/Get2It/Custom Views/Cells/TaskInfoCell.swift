@@ -47,6 +47,10 @@ class TaskInfoCell: UITableViewCell {
         return textField
     }()
     
+    var title: String? {
+        return textField.text
+    }
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupStackView()

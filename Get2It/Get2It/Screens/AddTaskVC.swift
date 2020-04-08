@@ -36,6 +36,24 @@ extension AddTaskVC {
     
     @objc private func saveButtonTapped() {
         
+        guard let titleCell = tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as? TaskInfoCell,
+            let title = titleCell.title,
+            !title.isEmpty,
+            let dateCell = tableView.cellForRow(at: IndexPath(row: 1, section: 0)) as? TaskPickerCell,
+            let startTimeCell = tableView.cellForRow(at: IndexPath(row: 2, section: 0)) as? TaskPickerCell,
+            let endTimeCell = tableView.cellForRow(at: IndexPath(row: 3, section: 0)) as? TaskPickerCell else
+        {
+            let alert = UIAlertController(title: "Missing some fields", message: "Check your information and try again.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        
+        let date = dateCell.textFieldString
+        let startTime = startTimeCell.textFieldString
+        let endTime = endTimeCell.textFieldString
+        
+        self.dismiss(animated: true, completion: nil)
     }
     
     @objc private func dismissButtonTapped() {
