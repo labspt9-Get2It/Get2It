@@ -9,7 +9,7 @@
 import UIKit
 
 class HeaderCell: UICollectionViewCell {
-    static let reuseIdentifier = "header-cell-reuse-identifier"
+    static let reuseIdentifier = "HeaderCell"
     
     private lazy var mainStackView: UIStackView = {
         let view = UIStackView()

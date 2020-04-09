@@ -40,7 +40,7 @@ class HomeVC: UIViewController, UICollectionViewDelegate {
         collectionView.backgroundColor = .systemBackground
         collectionView.register(HeaderCell.self, forCellWithReuseIdentifier: HeaderCell.reuseIdentifier)
         collectionView.register(SummaryCell.self, forCellWithReuseIdentifier: SummaryCell.reuseIdentifier)
-        collectionView.register(ListCell.self, forCellWithReuseIdentifier: ListCell.reuseIdentifier)
+        collectionView.register(HomeListCell.self, forCellWithReuseIdentifier: HomeListCell.reuseIdentifier)
         view.addSubview(collectionView)
         collectionView.delegate = self
     }
@@ -53,7 +53,7 @@ class HomeVC: UIViewController, UICollectionViewDelegate {
             
             if section == .list {
                 // Get a cell of the desired kind
-                if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ListCell.reuseIdentifier, for: indexPath) as? ListCell {
+                if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeListCell.reuseIdentifier, for: indexPath) as? HomeListCell {
                     
                     // Populate the cell with our item description
                     cell.label.text = "\(identifier)"
