@@ -10,8 +10,6 @@ import UIKit
 
 class TaskListCell: UICollectionViewCell {
     static let reuseIdentifier = "TaskListCell"
-    let accessoryImageView = UIImageView()
-//    let seperatorView = UIView()
     
     private lazy var mainStackView: UIStackView = {
         let view = UIStackView()
