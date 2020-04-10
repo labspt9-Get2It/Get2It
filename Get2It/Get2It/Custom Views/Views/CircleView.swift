@@ -8,21 +8,24 @@
 
 import UIKit
 
+// Private Constants
+private let kDiameter = CGFloat(20.0)
+
 class CircleView: UIView {
     private let trackLayer = CAShapeLayer()
     private var didAnimate = false
     
     override var intrinsicContentSize: CGSize {
-        return CGSize(width: 18, height: 18)
+        return CGSize(width: kDiameter, height: kDiameter)
     }
     
     init() {
         super.init(frame: .zero)
         
-        let center = CGPoint(x: 18, y: 18)
+        let center = CGPoint(x: kDiameter / 2, y: kDiameter / 2)
         
         // circle
-        let circularPath = UIBezierPath(arcCenter: center, radius: 13, startAngle: -CGFloat.pi / 2, endAngle: 2 * CGFloat.pi, clockwise: true)
+        let circularPath = UIBezierPath(arcCenter: center, radius: kDiameter / 2, startAngle: -CGFloat.pi / 2, endAngle: 2 * CGFloat.pi, clockwise: true)
         self.trackLayer.path = circularPath.cgPath
 
         self.trackLayer.strokeColor = UIColor.gray.cgColor
@@ -31,6 +34,9 @@ class CircleView: UIView {
         self.trackLayer.fillColor = UIColor.clear.cgColor
 
         self.layer.addSublayer(self.trackLayer)
+        
+        self.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+        self.setContentHuggingPriority(.defaultHigh, for: .vertical)
     }
  
     required init?(coder: NSCoder) {
