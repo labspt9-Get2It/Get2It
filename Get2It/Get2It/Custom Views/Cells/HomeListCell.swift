@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ListCell: UICollectionViewCell {
-    static let reuseIdentifier = "ListCell"
+class HomeListCell: UICollectionViewCell {
+    static let reuseIdentifier = "HomeListCell"
     let label = UILabel()
     let accessoryImageView = UIImageView()
     let seperatorView = UIView()
@@ -24,7 +24,7 @@ class ListCell: UICollectionViewCell {
     }
 }
 
-extension ListCell {
+extension HomeListCell {
     func configure() {
         seperatorView.translatesAutoresizingMaskIntoConstraints = false
         seperatorView.backgroundColor = .lightGray
